@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "target": "lpm",
     "public": "./",
     "ignore": [
       "firebase.json",
