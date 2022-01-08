@@ -1,7 +1,7 @@
 {
   "hosting": {
     "target": "lpm",
-    "public": "./assets/", // "./"
+    "public": "./", // "./"
     "ignore": [
       "firebase.json",
       "**/.*",
