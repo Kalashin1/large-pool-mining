@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "target": "lpm",
+    "public": "__sapper__/export",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

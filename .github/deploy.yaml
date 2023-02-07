@@ -1,0 +1,16 @@
+name: Deploy_To_Firebase
+
+on: [push, pull_request]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - run: npm install
+    - run: npm run export
+    - uses: w9jds/firebase-action@master
+      with:
+        args: deploy --only hosting:lpm
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}

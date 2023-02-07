@@ -1,6 +1,6 @@
 <script>
-	export let status;
-	export let error;
+	// export let status;
+	// export let error;
 
   import Header from "../components/Header.svelte";
   import Error from "../components/404.svelte";
